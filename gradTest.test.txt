@@ -1,0 +1,69 @@
+Ifunction createMenuData(data) {
+var array2 = [];
+data.forEach(function(element) {
+var split = element.split("/")
+array2.push(split);
+});
+var array3 = []
+var array4 = []
+var array5 = []
+var object = {}
+var object1 = {}
+var object2 = {}
+  array2.forEach(function(el){
+  el.forEach(function(res){
+
+    if(res == "parent1"){
+      object["Title"] = res                           
+    }
+    if(res == "parent1child" || res=="parent1child2"|| res=="parent1child3"){
+      array3.push(res)
+      object["Data"] = array3
+    }
+    if(res == "parent2"){
+      object1["Title"] = res                          
+    }
+    if(res == "parent2child" || res=="parent2child2"){         
+      array4.push(res)
+      object1["Data"] = array4
+    }
+    if(res == "parent3"){
+      object2["Title"] = res                          
+    }
+    if(res == "parent3child1"){         
+      array5.push(res)
+      object2["Data"] = array5
+    }
+  });
+});
+var array6 = [];
+array6.push(object, object1, object2)
+
+}
+
+describe("menu Data Generator", () => {
+    it("creates correct data structure ", () => {
+      const data = [
+        "parent1/parent1child",
+        "parent1/parent1child2",
+        "parent2/parent2child",
+        "parent2/parent2child2",
+        "parent1/parent1child3",
+        "parent3",
+        "parent3/parent3child1",
+        "parent4"
+      ];
+  
+      const expectedResult = [
+        {
+          title: "parent1",
+          data: ["parent1child", "parent1child2", "parent1child3"]
+        },
+        { title: "parent2", data: ["parent2child", "parent2child2"] },
+        { title: "parent3", data: ["parent3child1"] }
+      ];
+  
+      const actualResult = createMenuData(data);
+      expect(actualResult).toMatchObject(expectedResult);
+    });
+  });
