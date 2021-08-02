@@ -1,3 +1,5 @@
+#This is the points object
+#it shows the mapping of position on the podium to the number of points for the team
 points = {
     "1": 3,
     "2": 2,
@@ -45,6 +47,7 @@ def createMedalTable(results):
 
 
 def test_function():
+    #This it the test function, please don't change me
     medalTable = createMedalTable(medalResults)
     expectedTable = {
         "Italy": 4,
