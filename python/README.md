@@ -1,7 +1,8 @@
 # Grad Tech Test - Python
 
 ## Clone this repository
-please do not fork it!
+
+Use `git clone` to clone the repository locally, please do not fork this repository.
 
 ## Setup
 
