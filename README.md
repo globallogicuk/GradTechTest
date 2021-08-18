@@ -1,6 +1,7 @@
 # Grad Tech Test
 
-In this repository, you'll find a selection of sub-folders with language titles. In each, there's a test for that language, chose one you haven't worked with before for your submission.
+This repository contains a selection of tests organised into sub-folders by language.
+For your submission, demonstrate your ability to learn by choosing a language you haven't worked with before.
 
 ## Clone this repository
 
