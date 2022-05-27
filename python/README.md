@@ -2,7 +2,8 @@
 
 ## Clone this repository
 
-Use `git clone` to clone the repository locally, then change the remote, please do not fork this repository. To change the remote, use
+​
+Use `git clone` to clone the repository locally, then change the remote. Please do not fork this repository. To change the remote, use:
 
 ```bash
 git remote set-url origin <path-to-your-blank-repository>

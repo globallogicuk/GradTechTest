@@ -2,7 +2,8 @@
 
 ## Clone this repository
 
-Use `git clone` to clone the repository locally, then change the remote, please do not fork this repository. To change the remote, use
+​
+Use `git clone` to clone the repository locally, then change the remote. Please do not fork this repository. To change the remote, use:
 
 ```powershell
 git remote set-url origin <path-to-your-blank-repository>
@@ -25,6 +26,7 @@ To run the tests:
 
 ## Tips
 
-When the test passes clean up your code.
-It's worth spending time formatting and simplifing things.
+​
+After the test passes, clean up your code.
+It's worth spending time formatting and simplifying things.
 It's more important that humans can read your code than computers.
