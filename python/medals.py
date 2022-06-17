@@ -24,7 +24,7 @@ def createMedalTable(results):
 
 
 def test_function():
-    #This it the test function, please don't change me
+    #This is the test function, please don't change me
     medalTable = createMedalTable(medalResults)
     expectedTable = {
         "Italy": 4,
